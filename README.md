@@ -2,7 +2,11 @@
 
 A premium, full-stack web application designed to manage cafe inventory and personnel. The application features a robust Java Spring Boot architectural backend serving an elegant, modern "Glassmorphism" Angular client interface.
 
-![Aurora Console Mockup](./screenshot.png)
+![Aurora Console Mockup](./home.png)
+![Team](./Team.png)
+![Brista](./Add_Brista.png)
+![Coffee](./Add_Coffee.png)
+![Coffee](./Coffee.png)
 
 ## 🚀 Features
 
