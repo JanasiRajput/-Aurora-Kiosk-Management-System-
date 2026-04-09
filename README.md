@@ -1,4 +1,4 @@
-# Aurora Kiosk Management System (Assignment 2)
+# Aurora Kiosk Management System 
 
 A premium, full-stack web application designed to manage cafe inventory and personnel. The application features a robust Java Spring Boot architectural backend serving an elegant, modern "Glassmorphism" Angular client interface.
 
