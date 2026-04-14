@@ -1,0 +1,44 @@
+<div class="row mt-5">
+  <div class="col-12">
+    <div class="glass-panel p-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-gold m-0">Coffee Inventory</h2>
+        <a routerLink="/coffee-add" class="btn btn-primary px-4 rounded-pill">Add New Blend</a>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead>
+            <tr>
+              <th scope="col" class="ps-4">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Assigned Barista</th>
+              <th scope="col" class="text-end pe-4">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of coffeeService.coffees()">
+              <td class="ps-4 text-white-50">#{{ c.id }}</td>
+              <td class="fw-semibold">{{ c.name }}</td>
+              <td class="text-success">${{ c.price }}</td>
+              <td><span class="badge bg-secondary px-3 py-2 rounded-pill">{{ c.quantity }} pkgs</span></td>
+              <td><span class="text-white-50"><i class="bi bi-person me-1"></i>{{ c.employeeName }}</span></td>
+              <td class="text-end pe-4">
+                <button 
+                  class="btn btn-outline-danger btn-sm px-3 rounded-pill"
+                  (click)="coffeeService.deleteCoffee(c.id)">
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr *ngIf="coffeeService.coffees().length === 0">
+              <td colspan="6" class="text-center py-5 text-white-50">No coffee inventory available.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
