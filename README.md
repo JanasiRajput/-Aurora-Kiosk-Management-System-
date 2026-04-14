@@ -7,6 +7,8 @@ A premium, full-stack web application designed to manage cafe inventory and pers
 ![Brista](./Add_Brista.png)
 ![Coffee](./Add_Coffee.png)
 ![Coffee](./Coffee.png)
+![Analytics](./Analytics.png)
+![Postman](./Postman.png)
 
 ## 🚀 Features
 
@@ -40,7 +42,7 @@ npm install
 ```
 Compile the application:
 ```bash
-npm start
+npm run build
 ```
 *(Note: Because of our automated `predeploy`/`deploy` hooks in `package.json`, this command will automatically compile Angular and copy over all resulting `index.html` and `.js` files perfectly into `src/main/resources/static/`!)*
 
