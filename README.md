@@ -42,7 +42,7 @@ npm install
 ```
 Compile the application:
 ```bash
-npm run build
+npm start
 ```
 *(Note: Because of our automated `predeploy`/`deploy` hooks in `package.json`, this command will automatically compile Angular and copy over all resulting `index.html` and `.js` files perfectly into `src/main/resources/static/`!)*
 
