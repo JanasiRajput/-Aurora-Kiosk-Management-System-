@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "4e538205-1839-4749-adcd-46ac80f087f3",
+		"name": "Aurora Analytics API",
+		"description": "API Tests for Smart Operations Dashboard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Sales Summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sales/summary",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": ["api", "v1", "sales", "summary"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Revenue Summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/analytics/revenue",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": ["api", "v1", "analytics", "revenue"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Kiosk Insights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/analytics/insights",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": ["api", "v1", "analytics", "insights"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Efficiency Alerts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/analytics/alerts",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "8080",
+					"path": ["api", "v1", "analytics", "alerts"]
+				}
+			},
+			"response": []
+		}
+	]
+}

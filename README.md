@@ -10,11 +10,14 @@ A premium, full-stack web application designed to manage cafe inventory and pers
 
 ## 🚀 Features
 
-- **Spring Boot REST API**: Implements scalable RESTful endpoints. Stores `Barista` and `Coffee` entities natively using Spring Data JPA and Hibernate.
-- **Data Bootstrapping**: Features automated database population algorithms on startup, instantly initializing staff and inventory for immediate testing.
+- **Spring Boot REST API**: Implements scalable RESTful endpoints. Stores `Barista`, `Coffee`, `Kiosk`, and `Sale` entities natively using Spring Data JPA and Hibernate.
+- **Smart Operations Dashboard**: Integrated a data-driven "Insights" panel featuring real-time **Revenue Tracking**, **Usage Trends**, and **Peak-Time Performance analysis** powered by custom SVG charting.
+- **Data Insights Module**: Features automated performance scoring ("Top performing kiosks") and rule-based efficiency alerts (e.g., flagging low-efficiency units for maintenance) derived from historical telemetry.
+- **Data Bootstrapping**: Features automated database population algorithms on startup, initializing staff, inventory, and **30 days of randomized historical sales data** (450+ records) for immediate analytics testing.
 - **Angular 19+ Client Application**: Single Page Application leveraging modern, strictly-typed reactive routing to deliver lightning-fast component swaps without page reloads.
-- **Glassmorphism UI Design**: Complete UI overhaul utilizing deep Bootstrap integration, dark gradients, glass-panel filtering, and responsive grids for a state-of-the-art cinematic aesthetic modeled after industry-leading cafe brands.
-- **Unified Build Pipeline**: Automated synchronization utilizing NPM scripts that compiles the Angular source and silently hot-swaps all web artifacts directly into the Spring Boot `/static` assembly directory, allowing the entire stack to be served natively over a single local Tomcat port.
+- **Glassmorphism UI Design**: Complete UI overhaul utilizing deep Bootstrap integration, dark gradients, glass-panel filtering, and responsive grids for a state-of-the-art cinematic aesthetic.
+- **Unified Build Pipeline**: Automated synchronization utilizing NPM scripts that compiles the Angular source and silently hot-swaps all web artifacts directly into the Spring Boot `/static` assembly directory.
+- **Professional Testing Suite**: A dedicated `/testing` layer containing comprehensive manual test cases, automated Postman API collections, and regression plans to ensure enterprise-grade stability.
 
 ## 🛠️ Technology Stack
 - **Backend:** Java, Spring Boot, Spring Web, Spring Data JPA, H2 In-Memory Database
@@ -54,3 +57,19 @@ Alternatively, using Maven in the terminal:
 ### 3. Explore
 Launch your web browser and navigate seamlessly to:
 **[http://localhost:8080/](http://localhost:8080/)**
+
+## 🧪 Quality Assurance (QA)
+This project includes a professional-grade testing layer located in the `/testing` directory:
+- **Manual Test Cases**: Comprehensive scenarios for UI and navigation validation.
+- **REST API Automation**: Postman collections for testing all backend endpoints.
+- **Regression Suite**: Re-test plan to ensure baseline stability after the analytics upgrade.
+- **Test Strategy**: Outlines the testing methodology and pass/fail criteria.
+
+## 📡 API Reference
+New analytics endpoints added for the Smart Operations Dashboard:
+- `GET /api/v1/sales/summary`: Returns itemized sales amounts.
+- `GET /api/v1/analytics/revenue`: Real-time revenue breakdown by kiosk location.
+- `GET /api/v1/analytics/insights`: Efficiency rankings for operational units.
+- `GET /api/v1/analytics/alerts`: Automated status and performance alerts.
+- `GET /api/v1/analytics/peak-times`: Traffic distribution by operating hour.
+- `GET /api/v1/analytics/revenue/trend`: 30-day historical revenue data points.
